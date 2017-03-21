@@ -1,0 +1,35 @@
+council_area_of_residence,discharges,patients,average_number_of_discharges_per_patient
+Aberdeen City,2220,1437,1.5
+Aberdeenshire,1051,793,1.3
+Angus,399,298,1.3
+Argyll and Bute,877,588,1.5
+Ayrshire East,1167,801,1.5
+Ayrshire North,1506,974,1.5
+Ayrshire South,1074,739,1.5
+Borders,688,505,1.4
+Clackmannanshire,272,214,1.3
+Dumfries and Galloway,847,620,1.4
+Dunbartonshire East,407,294,1.4
+Dunbartonshire West,1020,619,1.6
+Dundee City,1102,742,1.5
+Edinburgh City,3371,2270,1.5
+Eilean Siar,308,224,1.4
+Falkirk,734,557,1.3
+Fife,2263,1620,1.4
+Glasgow City,8288,5429,1.5
+Highland,2025,1410,1.4
+Inverclyde,1109,769,1.4
+Lanarkshire North,2585,1704,1.5
+Lanarkshire South,2020,1393,1.5
+Lothian East,586,381,1.5
+Lothian West,1274,882,1.4
+Midlothian,507,364,1.4
+Moray,561,403,1.4
+Orkney Islands,190,127,1.5
+Perth and Kinross,835,553,1.5
+Renfrewshire,1550,1135,1.4
+Renfrewshire East,473,308,1.5
+Shetland Islands,147,114,1.3
+Stirling,466,335,1.4
+Outside Scotland,239,228,1
+Other/ Not Known,390,301,1.3
