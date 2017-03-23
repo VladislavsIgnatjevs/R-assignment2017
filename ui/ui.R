@@ -7,7 +7,7 @@ source("../functions.R");
 fluidPage(    
   
   # Give the page a title
-  titlePanel("Temperature in New York by month, May-September 1973"),
+  titlePanel("Air queslity in New York, May-September 1973"),
   
   # Generate a row with a sidebar
   sidebarLayout(      
