@@ -208,21 +208,13 @@ mean_data = data.frame(month = c('May', 'June', 'July', 'August', 'September'),
            avg_ozone = c(mean_ozone_may1973,mean_ozone_june1973, mean_ozone_july1973,mean_ozone_aug1973,mean_ozone_sep1973));
 
 
-# months <- table('May', 'June', 'July', 'August', 'September');
-# temp_all <- table(mean_temp_may1973,mean_temp_june1973, mean_temp_july1973,mean_temp_aug1973,mean_temp_aug1973);
+
 
 # average temperature by month
 counts <- fahr_to_celsius(mean_data[,2])
 barplot(counts, main="Average temperature (C) by month", horiz=FALSE,
         names.arg=c("May", "June", "July", "August", "September"));
 
-
-
-
-# # average temperature and ozone by month
-# counts <- table(fahr_to_celsius(mean_data[,2]),mean_data[,4])
-# barplot(counts, main="Average temperature (C) by month vs ozone", legend = rownames(counts),beside = TRUE,
-#         col=c("darkblue","red"),names.arg=c("May", "June", "July", "August", "September"));
 
 
 #temperature per month daily
@@ -252,23 +244,19 @@ pnorm_may = data.frame(ozone = c(may_pnorm_ozone),
                        temp = c(may_pnorm_temp),
                        day = c(may1973[,6]));
 
+barplot(pnorm_may[,1], main="normalised", horiz=FALSE,names.arg=c("norm"),xlab="x",ylab="y");
+barplot(may1973[,1], main="un normalised", horiz=FALSE,names.arg=c(" unnorm"),xlab="x",ylab="y");
 
 
 
 #Part 4. Explore your data with linear regression,
-#and present the results graphically.
-# plot(ozone_may, temper_may,xlab="Ozone ppb per day",ylab="Temperature C");
-# abline(lm(ozone_may ~ temper_may));
+
+plot(ozone_may, temper_may,xlab="Ozone ppb per day",ylab="Temperature C");
+abline(lm(ozone_may ~ temper_may));
 
 
-
-#Part 5. Build a simple interface to your data using Shiny.
-#Provide at least two controls for a user to explore the data
-#(e.g. (i) toggling ozone, solar, wind and temperature;
-#and (ii) toggling graph type).
-
-
-#contab <- with(airquality,table(OzHi = Ozone > 80, Month))
+#run shiny
+runApp('ui');
 
 
 
